@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./styles/css/main.css">
+        <title>HOME | Edge of the canvas</title>
+        <script src="./scripts/toggle.js"></script>
+        <script src="./scripts/filter.js"></script>
+    </head>
+    <body>
+        <nav id="nav-container">
+            <div class="wrapper">
+                <div class="logo-placeholder">
+                    <a href="./index.html"><img src="./images/logos/image-gallery-filled-50.png" alt="logo"></a>
+                    <a href="./index.html"><span>Edge of the Canvas</span></a>
+                </div>
+                <div class="list-placeholder">
+                    <ul>
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./gallery.html">gallery</a></li>
+                    </ul>
+                </div>
+                <div class="button-placeholder">
+                    <div class="open-button" onclick="OpenNavigation()"></div>
+                </div>
+            </div>
+            <div id="vertical-overlay">
+                <div class="wrapper">
+                    <div class="logo-placeholder">
+                        <a href="./index.html"><img src="./images/logos/image-gallery-filled-50.png" alt="logo"></a>
+                        <a href="./index.html"><span>gallery</span></a>
+                    </div>
+                    <div class="button-placeholder">
+                        <div class="close-button" onclick="CloseNavigation()"></div>
+                    </div>
+                </div>
+                <hr class="spacer">
+                <nav class="list-placeholder-v">
+                    <a class="link" href="./index.html">home</a>
+                    <a class="link" href="./gallery.html">gallery</a>
+                </nav>
+            </div>
+        </nav>
+        <header id="header-container">
+            <p>/gallery</p>
+            <div class="background-image">
+                <div class="foreground-image">
+                    <div class="border"></div>
+                </div>
+            </div>
+        </header>
+        <section class="introduction">
+            <h2>The gallery!</h2>
+            <p>Here you can find all the art</p>
+            <p>You can filter it using the selection menu below </p>
+
+            <div class="filter-selector">
+                <select class="get-filter" name="filter" onchange="getFilter(this)">
+                    <option selected value=1>All</option>
+                    <option value=2>Artificial Intelligence</option>
+                    <option value=3>Pixel Art</option>
+                </select>
+                <div class="selector-border"></div>
+            </div>
+        </section>
+
+       <div class="gallery">
+        <div class="image-element AI">
+            <img src="https://madforlife.neocities.org/gallery/AI/littlemad_minecraft_mansion_beautiful_gothic_towers_intricate_d_3844f89d-1e54-46b1-a98a-0b5f307def04.png" 
+            alt="minecraft, mansion, beautiful, gothic, towers, intricate">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Mansion</p>
+                    <p class="low-opacity">Pastel purple themed mansion</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element AI">
+            <img src="https://madforlife.neocities.org/gallery/AI/littlemad_minecraft_mansion_beautiful_gothic_towers_intricate_d_c94afcac-33da-4dcf-aa0e-be28d44fcbaa.png" 
+            alt="minecraft, mansion, beautiful, gothic, towers, intricate">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Mansion V2</p>
+                    <p class="low-opacity">Pastel purple themed mansion V2</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element AI">
+            <img src="https://madforlife.neocities.org/gallery/AI/littlemad_minecraft_mansion_beautiful_gothic_towers_intricate_d_ade17d23-2132-428c-b0c7-1d34c4092769.png" 
+            alt="minecraft, mansion, beautiful, gothic, towers, intricate">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Mansion V3</p>
+                    <p class="low-opacity">Pastel purple themed mansion V3</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element AI">
+            <img src="https://madforlife.neocities.org/gallery/AI/littlemad_red_themed_cyberpunk_pixelart_anime_city-scape_bea4dc25-00ae-4697-88b6-f0d5f2135562.png" 
+            alt="red themed cyberpunk pixelart anime city space">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>City</p>
+                    <p class="low-opacity">Red themed cyberpunk city scape</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element AI">
+            <img src="https://madforlife.neocities.org/gallery/AI/Yumiko_white_mitsubishi_evo_x_on_a_pastel_red_scenery_pixel_art_07d1a43c-0a82-4bc0-9d11-305515d857d8.png" 
+            alt="white mitsubishi evo x on a pastel red scenery">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Car</p>
+                    <p class="low-opacity">White mitsubishi evo X on a pastel red scenery</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element AI">
+            <img src="https://madforlife.neocities.org/gallery/AI/RBOYLE_cinematic_highly_detailed_digital_illustration_of_a_land_e8197bc5-7fa3-47b5-be4e-904a644d80af.png" 
+            alt="Highly detailed cinematic of a mountian land">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Land illustration</p>
+                    <p class="low-opacity">Highly detailed cinematic of a land</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element AI">
+            <img src="https://madforlife.neocities.org/gallery/AI/RBOYLE_cinematic_highly_detailed_digital_illustration_of_a_land_2b156c42-0d10-41ae-94f8-f85a4ea20caa.png" 
+            alt="Highly detailed illustration of a land, a misty town on the mountain side, gothic victoria inspiration">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Illustration of a landscape</p>
+                    <p class="low-opacity">Misty town on the mountain side, gothic Victoria inspiration</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element AI">
+            <img src="https://madforlife.neocities.org/gallery/AI/benben_a_stunning_new_planet_in_the_Goldilocks_zone_in_outer_sp_aa37c322-6644-404a-bb2d-2442ad301444.png" 
+            alt="stunning planet in goldilocks zone in outer space">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Planet</p>
+                    <p class="low-opacity">Stunning planet in outer space</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element AI">
+            <img src="https://madforlife.neocities.org/gallery/AI/Newz_landscape_4k_a_deep_empty_valley_a_blue-coloured_stream_of_b97dfe95-4622-407f-9923-ef0e8535f446.png" 
+            alt="deep empty vallay, blue colored stream of bubbling water">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Empty valley</p>
+                    <p class="low-opacity">Empty valley with a blue colored stream of bubbling water</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element AI">
+            <img src="https://madforlife.neocities.org/gallery/AI/PeopleOverPixels_an_abstract_painting_featuring_elements_inspir_590a4d61-46a6-4d29-b97d-d6826e429f5d.png" 
+            alt="An abstract painting featuring elements inspired by the connection of the elements and the human form">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Abstract painting</p>
+                    <p class="low-opacity">An abstract painting inspired by connection the connection of elements and the human form</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element AI">
+            <img src="https://madforlife.neocities.org/gallery/AI/unratedroweyna_beautifull_sky_abstraction_like_bigbang_studio_g_7059f3e4-0068-4bae-87fb-ea566d1e6804.png" 
+            alt="Beautiful sky abstraction">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Sky abstraction</p>
+                    <p class="low-opacity">Beautiful sky abstraction like bigbang studio</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element AI">
+            <img src="https://madforlife.neocities.org/gallery/AI/Madisha_pattern_using_gold_lines_navy_blue_as_line_art_with_bla_121d9645-8a76-49ff-a427-8b79080128fe.png" 
+            alt="Madisha pattern using gold lines and navy blue as line art with black background">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Madisha patter</p>
+                    <p class="low-opacity">Madisha pattern using gold lines and navy blue as line art with black background</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-element PixelArt">
+            <img src="https://madforlife.neocities.org/gallery/pixel_art/dcxfwx8-fa7bb581-215d-44c6-9e92-44386983c8f3.png" 
+            alt="Forest">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Forest</p>
+                    <p class="low-opacity">Swamp forest with tall trees</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element PixelArt">
+            <img src="https://madforlife.neocities.org/gallery/pixel_art/fantasy_plains_castle_by_aamatniekss_de9m9ya-fullview.jpg" 
+            alt="A meadow">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Meadow</p>
+                    <p class="low-opacity">A green meadow with white flowers and a castle in the background</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element PixelArt">
+            <img src="https://madforlife.neocities.org/gallery/pixel_art/tumblr_0b53e226b999dd3cbe0da91a3c62ef5c_18f7a6b6_2048.jpg" 
+            alt="Tree with large roots on a cliff">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Tree</p>
+                    <p class="low-opacity">Large roots tree on a cliff</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element PixelArt">
+            <img src="https://madforlife.neocities.org/gallery/pixel_art/tumblr_8054f28381021e13af3277fc4f510d73_3f06e9a7_2048.jpg" 
+            alt="Sunset">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Sunset</p>
+                    <p class="low-opacity">Beautiful meadow at sunset with grass</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element PixelArt">
+            <img src="https://madforlife.neocities.org/gallery/pixel_art/tumblr_6cee543ded006eaada12ead100feead8_1933a733_2048.jpg" 
+            alt="Dense forest">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Dense forest</p>
+                    <p class="low-opacity">Sunset over a dense forest with clouds and birds</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element PixelArt">
+            <img src="https://madforlife.neocities.org/gallery/pixel_art/tumblr_c572a066e4b45863c68df251ff45d947_1f40dc97_2048.png" 
+            alt="A small town on an island">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Town on island</p>
+                    <p class="low-opacity">A small town on an island photographed from a distance</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element PixelArt">
+            <img src="https://madforlife.neocities.org/gallery/pixel_art/tumblr_62c4043b2e8ed6308b11b15cab87c595_681cfa5a_2048.jpg" 
+            alt="Castle">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Castle</p>
+                    <p class="low-opacity">A castle on a tiny island in a lake on pastel purple background</p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="image-element PixelArt">
+            <img src="https://madforlife.neocities.org/gallery/pixel_art/crossing_pixelart.gif" 
+            alt="Raining on a staircase">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Rain</p>
+                    <p class="low-opacity">Raining staircase scenery</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element PixelArt">
+            <img src="https://madforlife.neocities.org/gallery/pixel_art/tumblr_b2b6707d6070eb17fe0709e0d7dd06f1_e88ee98b_640.gif" 
+            alt="Bubbling gayser">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Bubbling water</p>
+                    <p class="low-opacity">Animated pixelart of a bubbling gayser</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element PixelArt">
+            <img src="https://madforlife.neocities.org/gallery/pixel_art/tumblr_5d37ab2aa782462c7aa092f7bd0d27cb_1690fe1e_1280.gif" 
+            alt="Greenery scenery">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Nature scenery</p>
+                    <p class="low-opacity">Nature scenery with waterfall sword and lanter</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element PixelArt">
+            <img src="https://madforlife.neocities.org/gallery/pixel_art/tumblr_af8dc0552e6e5dfaf57f146c5db0c057_4a26ca7c_640.gif" 
+            alt="Train under starry sky">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Train</p>
+                    <p class="low-opacity">Train under starry sky passing over water, pastel purple scenery with clouds</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element PixelArt">
+            <img src="https://madforlife.neocities.org/gallery/pixel_art/d9nwsnt-d8dcabb0-6ce0-46aa-b34a-8e7e5c041296.gif" 
+            alt="Two brothers playing on a console game">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Two brothers gaming</p>
+                    <p class="low-opacity">They seem too concentrated</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-element PixelArt">
+            <img src="https://madforlife.neocities.org/gallery/pixel_art/tumblr_527037c50ca77b41bd8c30c0b9c5472f_0e4994d1_2048.jpg" 
+            alt="Snowy scenery, girl looking at a cat infront of vending machine">
+            <div class="caption-placeholder">
+                <div class="caption">
+                    <p>Snowy scenery</p>
+                    <p class="low-opacity">Girl luring a cat</p>
+                </div>
+            </div>
+        </div>
+       </div>
+
+        <footer id="footer-container">
+            <div class="wrapper">
+                <div class="footer-logo footer-element">
+                    <p>Edge of the Canvas | GALLERY</p>
+                    <a href="./index.html">
+                        <img src="./images/logos/image-gallery-filled-50.png" alt="logo">
+                    </a>
+                </div>
+                <div class="footer-contact footer-element">
+                    <h1>contact me</h1>
+                    <p><span>email - </span>contact@littlemad.net</p>
+                    <p><span>discord - </span>littlemad#1000</p>
+                    <p><span><a href="https://discord.gg/8wC6NX73g9" target="_blank">discord server</a></span></p>
+                </div>
+                <div class="footer-legal footer-element">
+                    <h1>legal</h1>
+                    <p><span>&copy; 2023 Edge of the canvas </span>Some Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

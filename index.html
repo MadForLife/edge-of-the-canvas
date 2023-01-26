@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./styles/css/main.css">
+        <title>HOME | Edge of the Canvas</title>
+        <script src="./scripts/toggle.js"></script>
+    </head>
+    <body>
+        <nav id="nav-container">
+            <div class="wrapper">
+                <div class="logo-placeholder">
+                    <a href="./index.html"><img src="./images/logos/image-gallery-filled-50.png" alt="logo"></a>
+                    <a href="./index.html"><span>Edge of the Canvas</span></a>
+                </div>
+                <div class="list-placeholder">
+                    <ul>
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./gallery.html">gallery</a></li>
+                    </ul>
+                </div>
+                <div class="button-placeholder">
+                    <div class="open-button" onclick="OpenNavigation()"></div>
+                </div>
+            </div>
+            <div id="vertical-overlay">
+                <div class="wrapper">
+                    <div class="logo-placeholder">
+                        <a href="./index.html"><img src="./images/logos/image-gallery-filled-50.png" alt="logo"></a>
+                        <a href="./index.html"><span>gallery</span></a>
+                    </div>
+                    <div class="button-placeholder">
+                        <div class="close-button" onclick="CloseNavigation()"></div>
+                    </div>
+                </div>
+                <hr class="spacer">
+                <nav class="list-placeholder-v">
+                    <a class="link" href="./index.html">home</a>
+                    <a class="link" href="./gallery.html">gallery</a>
+                </nav>
+            </div>
+        </nav>
+        <header id="header-container">
+            <p>/home</p>
+            <div class="background-image">
+                <div class="foreground-image">
+                    <div class="border"></div>
+                </div>
+            </div>
+        </header>
+        <section class="introduction">
+            <h2>Welcome to my small internet gallery!</h2>
+            <p>Here, you will find a curated collection of artwork from a variety of talented artists.</p>
+            <p>Whether you're a collector or simply looking for inspiration, we believe <br>you'll find something here that speaks to you.</p>
+            <p>So, take a look around and enjoy!</p>
+        </section>
+        <footer id="footer-container">
+            <div class="wrapper">
+                <div class="footer-logo footer-element">
+                    <p>Edge of the canvas | GALLERY</p>
+                    <a href="./index.html">
+                        <img src="./images/logos/image-gallery-filled-50.png" alt="logo">
+                    </a>
+                </div>
+                <div class="footer-contact footer-element">
+                    <h1>contact me</h1>
+                    <p><span>email - </span>contact@littlemad.net</p>
+                    <p><span>discord - </span>littlemad#1000</p>
+                    <p><span><a href="https://discord.gg/8wC6NX73g9" target="_blank">discord server</a></span></p>
+                </div>
+                <div class="footer-legal footer-element">
+                    <h1>legal</h1>
+                    <p><span>&copy; 2023 Edge of the canvas. </span>Some Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
